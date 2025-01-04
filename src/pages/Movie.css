@@ -52,3 +52,34 @@
   .description p {
     line-height: 1.4rem;
   }
+
+  @media (max-width: 768px) {
+    .movie-page {
+      max-width: 100%; /* Ocupa toda a largura disponível */
+      padding: 1rem; /* Adiciona espaçamento interno */
+      margin: 1rem auto; /* Ajusta a margem para ser menor */
+    }
+  
+    .movie-page .movie-card img {
+      max-width: 100%; /* Garante que a imagem seja responsiva */
+    }
+  
+    .tagline {
+      font-size: 1.1rem; /* Reduz o tamanho do texto */
+      margin-bottom: 1.5rem; /* Reduz o espaçamento inferior */
+    }
+  
+    .info {
+      margin-bottom: 1rem; /* Ajusta o espaçamento entre os blocos de informações */
+    }
+  
+    .info h3 {
+      font-size: 1.2rem; /* Ajusta o tamanho do título das seções */
+      gap: 0.3rem; /* Reduz o espaçamento entre o ícone e o texto */
+    }
+  
+    .description p {
+      font-size: 1rem; /* Ajusta o tamanho do texto para melhor legibilidade */
+      line-height: 1.5rem; /* Melhora o espaçamento entre linhas */
+    }
+  }
