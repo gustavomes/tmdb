@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
           <div className="container">
-          
+          <Navbar /> {/* coment */}
           <Routes>
             <Route exact path="/" element= {<Home />} />
             <Route path="/movie/:id" element= {<Movie />} /> {/* aqui teve erro */}
