@@ -13,7 +13,7 @@ function App() {
           <div className="container">
           <Navbar />
           <Routes>
-            <Route exact path="/" element= {<Home />} />
+            <Route exact path="/*" element= {<Home />} />
             <Route path="/movie/:id" element= {<Movie />} /> {/* aqui teve erro */}
             <Route path="/search" element= {<Search />} />
           </Routes>
