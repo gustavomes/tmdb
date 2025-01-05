@@ -24,6 +24,7 @@ function App() {
   return (
     // O contêiner principal da aplicação, com a classe "App" para aplicar estilos globais.
     <div className="App">
+<<<<<<< HEAD
       {/* Um contêiner adicional para centralizar o conteúdo e aplicar layout. */}
       <div className="container">
         {/* Renderiza o componente Navbar, exibido em todas as páginas. */}
@@ -38,6 +39,17 @@ function App() {
           <Route path="/search" element={<Search />} />
         </Routes>
       </div>
+=======
+          <div className="container">
+          <Navbar /> {/* coment */}
+          <Routes>
+            <Route exact path="/" element= {<Home />} />
+            <Route path="/movie/:id" element= {<Movie />} /> {/* aqui teve erro */}
+            <Route path="/search" element= {<Search />} />
+          </Routes>
+          </div>
+          
+>>>>>>> Dev
     </div>
   );
 }

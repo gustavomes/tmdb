@@ -36,7 +36,7 @@ const Search = () => {
  <div className={styles.container}>
     <h2 className={styles.title}> Resultados para: <span className={styles.queryText}>{query}</span> </h2>
     <div className={styles.moviesContainer}>
-      {movies.length === 0 && <p> carregando </p>}
+      {movies.length === 0 && <p className={styles.error}> Não tem nenhum filme </p>}
       {movies.length > 0 && movies.map((movie) => 
      <MovieCard key={movie.id} movie={movie}/>)}
     </div>
